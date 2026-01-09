@@ -1,15 +1,10 @@
-import { Button } from '@mui/material';
 import { ThemeProviderMUI } from './theme/ThemeProviderMUI';
-import { useThemeStore } from './store/theme';
+import { RouterProviderPages } from './router/RouterProviderPages';
 
 function App() {
-  const { mode, setMode } = useThemeStore();
-
   return (
     <ThemeProviderMUI>
-      <Button variant="contained" onClick={() => setMode(!mode)}>
-        Button
-      </Button>
+      <RouterProviderPages />
     </ThemeProviderMUI>
   );
 }
