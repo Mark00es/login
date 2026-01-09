@@ -3,6 +3,14 @@ import Login from '@/pages/Login';
 import NotFoundPage from '@/pages/NotFound';
 import { BrowserRouter, Outlet, Route, Routes, useParams, useSearchParams, Navigate } from 'react-router';
 
+// const loginService = (data: any) => {
+//   return new Promise(resolve => {
+//     setTimeout(() => {
+//       resolve(data);
+//     }, 2000);
+//   });
+// };
+
 export const RouterProviderPages = () => {
   return (
     <BrowserRouter>
